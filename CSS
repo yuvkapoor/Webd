@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            color: #555;
+            padding: 10px;
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Student Details</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Personal Information</h2>
+            <p><strong>Name:</strong> John Doe</p>
+            <p><strong>Age:</strong> 20</p>
+            <p><strong>Gender:</strong> Male</p>
+        </section>
+
+        <section>
+            <h2>Contact Details</h2>
+            <p><strong>Email:</strong> john.doe@example.com</p>
+            <p><strong>Phone:</strong> +1 123-456-7890</p>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2024 Student Details. All rights reserved.
+    </footer>
+
+</body>
+</html>
