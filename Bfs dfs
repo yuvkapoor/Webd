@@ -1,0 +1,83 @@
+Create a node list (Queue) that initially contains the first node N and mark it as visited.
+
+2. Visit the adjacent unvisited vertex of N and insert it in a queue.
+
+3. If there are no remaining adjacent vertices left, remove the first vertex from the queue mark it 
+
+as visited, display it.
+
+4. Repeat step 1 and step 2 until the queue is empty or the desired node is found.
+
+Code –
+
+graph = {
+
+'S': ['A', 'B'],
+
+'A': ['C', 'D'],
+
+'B': ['G','H'],
+
+'C': ['E','F'], 
+
+'D': [],
+
+'G': ['I'],
+
+'H': [],
+
+'E': ['K'],
+
+'F': [],
+
+'I': [],
+
+'K': []
+
+}
+
+visited =[] 
+
+queue=[]
+
+def bfs(visited,graph,node): 
+
+visited.append(node) 
+
+queue.append(node)
+
+while queue: 
+
+P=queue.pop(0) 
+
+print(P,end=" ")
+
+for neighbour in graph[P]:
+
+if neighbour not in visited: 
+
+visited.append(neighbour) 
+
+queue.append(neighbour)
+
+avisit=set()
+
+def dfs(avisit,graph,node): 
+
+if node not in avisit:
+
+print(node,end=" ") 
+
+avisit.add(node)
+
+for neighbour in graph[node]:
+
+dfs(avisit,graph,neighbour)
+
+print("Breadth firstsearch") 
+
+bfs(visited,graph,'S') 
+
+print("\nDepth firstsearch") 
+
+dfs(avisit,graph,'S')
